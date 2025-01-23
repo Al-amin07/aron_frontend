@@ -40,7 +40,7 @@ const Dashboard = () => {
     const { data: projects, isLoading } = useQuery({
         queryKey: ['projects'],
         queryFn: async () => {
-            const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API}/project`)
+            const { data } = await axios.get(`https://new-olive-delta.vercel.app/api/project`)
             return data.data
         }
     })

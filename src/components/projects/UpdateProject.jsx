@@ -28,7 +28,7 @@ const UpdateProject = ({ project, setUpdate, refetch, isFetching }) => {
       };
 
       const { data } = await axios.patch(
-        `${process.env.NEXT_PUBLIC_API}/project/${project?._id}`,
+        `https://new-olive-delta.vercel.app/api/project/${project?._id}`,
         projectData
       );
       console.log({ data });

@@ -16,7 +16,6 @@ const CreateProject = () => {
         setLoading(true)
         try {
             const form = e.target as HTMLFormElement;
-
             const description = form.description.value;
             const email = form.email.value;
             const image = form.image.value;
@@ -27,9 +26,12 @@ const CreateProject = () => {
                 title, description, email, tag, image, startDate, endDate, status: 'pending'
             }
 
-            const { data } = await axios.post(`${process.env.NEXT_PUBLIC_API}/project`,
+            const { data } = await axios.post(`https://new-olive-delta.vercel.app/api/project`,
                 projectData
             );
+            // const { data } = await axios.post(`${process.env.NEXT_PUBLIC_API}/project`,
+            //     projectData
+            // );
             console.log({ data })
             if (data?.data) {
                 toast.success('Project created succesfully');

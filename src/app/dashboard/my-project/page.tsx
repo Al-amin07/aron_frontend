@@ -86,7 +86,7 @@ const Projects = () => {
     const { data: projects, isLoading, refetch, isFetching } = useQuery({
         queryKey: ['projects'],
         queryFn: async () => {
-            const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API}/project`)
+            const { data } = await axios.get(`https://new-olive-delta.vercel.app/api/project`)
             return data.data
         }
     })
@@ -120,7 +120,7 @@ const Projects = () => {
     const handleDelete = async (id: string) => {
         try {
 
-            const { data } = await axios.delete(`${process.env.NEXT_PUBLIC_API}/project/${id}`)
+            const { data } = await axios.delete(`https://new-olive-delta.vercel.app/api/project/${id}`)
             console.log({ data })
             console.log(id)
             if (data.success) {

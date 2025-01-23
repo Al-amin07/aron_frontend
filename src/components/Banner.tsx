@@ -1,7 +1,7 @@
 import React from 'react';
 import { Syne } from "next/font/google";
 export const syne = Syne({ subsets: ['latin'], weight: ['400', '500', '600', '700'] },)
-
+import img from '@/assets/Vector 8.png'
 import { FaArrowRightLong } from "react-icons/fa6";
 import Image from 'next/image';
 
@@ -20,7 +20,7 @@ const Banner = () => {
                         <button className='bg-primary py-3 md:py-4 px-7  text-white text-sm rounded-full font-bold'>Explore Work <FaArrowRightLong size={20} className='inline-block ml-4' /></button>
                     </div>
                     <div className='absolute -top-40 -right-6'>
-                        <Image src={'/Vector 8.png'} alt='logo' height={300} width={500} />
+                        <Image src={img} alt='logo' height={300} width={500} />
                     </div>
                 </div>
             </div>
