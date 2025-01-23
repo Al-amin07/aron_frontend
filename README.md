@@ -6,6 +6,7 @@ This is a full-stack Portfolio Landing Page project built using **Next.js** (fro
 
 ### Live Demo
 The application is deployed and accessible at: (https://arronn.vercel.app/)
+backend ripo: https://github.com/Al-amin07/aron_backend
 
 ---
 
