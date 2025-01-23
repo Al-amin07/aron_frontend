@@ -4,6 +4,12 @@ This is a full-stack Portfolio Landing Page project built using **Next.js** (fro
 
 ---
 
+### Live Demo
+The application is deployed and accessible at: (https://arronn.vercel.app/)
+
+---
+
+
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
@@ -23,10 +29,6 @@ The Portfolio Landing Page demonstrates the ability to:
 - Implement a backend with **NodeJS** to manage project data and API endpoints.
 - Provide a simple dashboard for CRUD operations on portfolio projects.
 
-### Live Demo
-The application is deployed and accessible at: (https://arronn.vercel.app/)
-
----
 
 ## Features
 
