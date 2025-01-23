@@ -37,10 +37,10 @@ import React from 'react';
 //     },
 // ]
 const Dashboard = () => {
-    const { data: projects, isLoading, } = useQuery({
+    const { data: projects, isLoading } = useQuery({
         queryKey: ['projects'],
         queryFn: async () => {
-            const { data } = await axios.get('http://localhost:5000/api/project')
+            const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API}/project`)
             return data.data
         }
     })
@@ -51,14 +51,14 @@ const Dashboard = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className="bg-white p-6 rounded-lg shadow-md">
                     <h2 className="text-lg font-semibold mb-2">Total Projects</h2>
-                    <p className="text-3xl font-bold text-blue-600">{projects.length}</p>
+                    <p className="text-3xl font-bold text-blue-600">{projects?.length}</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md">
                     <h2 className="text-lg font-semibold mb-2">Pending</h2>
                     <p className="text-3xl font-bold text-red-600">
                         {
 
-                            projects?.filter((project: TProject) => project.status === "pending")
+                            projects?.filter((project: TProject) => project?.status === "pending")
                                 .length
                         }
                     </p>

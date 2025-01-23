@@ -5,8 +5,8 @@ import img from '@/assets/dis.png'
 import logoImg from '@/assets/Vector 6.png'
 export default function Discover() {
     return (
-        <section className={` bg-transparent  lg:ml-6 text-white`}>
-            <div className="  border-2">
+        <section className={`px-5 md:px-20 bg-transparent  lg:ml-6 text-white`}>
+            <div className=" ">
                 <div className="grid relative grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className={`  ${rubik.className}  `}>
                         <h2 className={`  ${syne.className}  text-4xl md:text-5xl lg:text-6xl font-medium leading-tight`}>

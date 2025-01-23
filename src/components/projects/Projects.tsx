@@ -8,7 +8,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Projects = () => {
     return (
-        <div className={` ${rubik.className} max-w-6xl  mx-auto`}>
+        <div className={` ${rubik.className} max-w-6xl px-5 xl:px-0  mx-auto`}>
             <div className='relative flex flex-col items-center'>
                 <h2 className={`text-4xl md:text-5xl lg:text-6xl font-medium text-gray-100 ${syne.className}`}>My Projects Highlight</h2>
                 <button className='text-gray-300 my-8 md:my-12 font-bold text-sm py-2 md:py-3 px-6 rounded-full border border-primary'>Explore More

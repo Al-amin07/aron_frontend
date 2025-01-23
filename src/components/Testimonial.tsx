@@ -4,7 +4,7 @@ import img from '@/assets/Vector 8.png'
 import Image from "next/image"
 export default function Testimonial() {
     return (
-        <section className={`bg-transparent text-white py-20 px-0  lg:px-4`}>
+        <section className={`bg-transparent text-white py-20 px-5  lg:px-4`}>
             <div className="container  mx-auto max-w-6xl relative">
                 {/* Decorative quote marks */}
                 <div className="absolute top-0 right-0 text-orange-400">

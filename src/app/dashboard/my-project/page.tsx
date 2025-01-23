@@ -85,7 +85,7 @@ const Projects = () => {
     const { data: projects, isLoading, refetch, isFetching } = useQuery({
         queryKey: ['projects'],
         queryFn: async () => {
-            const { data } = await axios.get('http://localhost:5000/api/project')
+            const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API}/project`)
             return data.data
         }
     })

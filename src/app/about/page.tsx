@@ -7,13 +7,13 @@ import img2 from '@/assets/dis2.png'
 import Image from "next/image";
 export default function About() {
     return (
-        <div className=" text-white my-12 lg:my-20   flex items-center justify-center">
-            <div className="container mx-auto px-0 lg:px-6 py-6">
+        <div className=" text-white my-12 lg:my-20    flex items-center justify-center">
+            <div className="container mx-auto px-5 lg:px-6 py-6">
                 {/* Header */}
 
                 <Details desc="Little brief about myself" title="About Me" />
 
-                <div className="border-t pt-16 grid grid-cols-1  gap-20 items-center">
+                <div className="border-t pt-16  grid grid-cols-1  gap-20 items-center">
                     {/* Mission Statement */}
                     <div className="flex flex-col lg:flex-row">
                         <h2 className={`text-5xl md:text-6xl lg:text-7xl flex-1  mb-4 ${syne.className}`}>
