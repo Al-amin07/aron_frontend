@@ -60,18 +60,22 @@ The application is deployed and accessible at: (https://arronn.vercel.app/)
 
 ### Instructions
 
-#### Clone the Repository
-```bash
-git clone (https://github.com/Al-amin07/aron_frontend)
-cd aron_frontend```
+#### 1. Clone the Repository
 
+```bash
+git clone https://github.com/Al-amin07/carstore_backend.git
+```
 
-#### Install Dependiencies
-```bash
-npm install
-```bash
+#### 2. Install Dependencies
 
-#### Clone the Repository
+Navigate to the project directory and install the necessary dependencies:
+
+   ```bash
+   cd carstore_backend
+   npm install
+   ```
+
+#### 3. Run
 ```bash
-git clone (https://github.com/Al-amin07/aron_frontend)
-cd aron_frontend
+npm run dev
+```
