@@ -8,6 +8,7 @@ import toast from 'react-hot-toast';
 import { ImSpinner5 } from 'react-icons/im';
 
 const CreateProject = () => {
+    const [title, setTitle] = useState('')
     const [loading, setLoading] = useState(false)
     const router = useRouter()
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -15,7 +16,7 @@ const CreateProject = () => {
         setLoading(true)
         try {
             const form = e.target as HTMLFormElement;
-            const title = form.title.value;
+
             const description = form.description.value;
             const email = form.email.value;
             const image = form.image.value;
@@ -54,6 +55,7 @@ const CreateProject = () => {
                         type="text"
                         id="title"
                         name="title"
+                        onChange={(e) => setTitle(e.target.value)}
                         placeholder='Title'
                         className="mt-1 block w-full rounded-md border-gray-300  border py-1.5 px-5  "
                         required

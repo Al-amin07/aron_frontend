@@ -11,6 +11,7 @@ import { FaUserCircle } from 'react-icons/fa';
 import { FaPen } from 'react-icons/fa6';
 import { MdDelete } from "react-icons/md";
 import UpdateProject from '@/components/projects/UpdateProject'; // Adjust the import path as necessary
+import { TProject } from '@/components/projects/project.type';
 
 export interface IProject {
     title: string;
@@ -162,7 +163,7 @@ const Projects = () => {
                             </tr>
                         </thead>
                         <tbody className="bg-white divide-y divide-gray-200">
-                            {projects?.map((project) => (
+                            {projects?.map((project: TProject) => (
                                 <tr key={project?._id}>
                                     <td className="px-6 py-4 whitespace-nowrap">
                                         <div className="flex items-center">
@@ -222,7 +223,7 @@ const Projects = () => {
                                     </td>
                                     <td className="px-6 flex items-center gap-1 py-4 whitespace-nowrap">
 
-                                        <button onClick={() => checkDelete(project?._id)} className='hover:bg-slate-100 p-2 rounded-full'>
+                                        <button onClick={() => checkDelete(project?._id as string)} className='hover:bg-slate-100 p-2 rounded-full'>
                                             <MdDelete size={24} className=' text-red-500' />
                                         </button>
 
