@@ -64,10 +64,12 @@ The application is deployed and accessible at: (https://arronn.vercel.app/)
 ```bash
 git clone (https://github.com/Al-amin07/aron_frontend)
 cd aron_frontend
+```bash
 
 #### Install Dependiencies
 ```bash
 npm install
+```bash
 
 #### Clone the Repository
 ```bash
