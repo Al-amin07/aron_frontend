@@ -20,11 +20,11 @@ This is a full-stack Portfolio Landing Page project built using **Next.js** (fro
 
 The Portfolio Landing Page demonstrates the ability to:
 - Build a pixel-perfect, responsive frontend using **Next.js** and **Tailwind CSS**.
-- Implement a backend with **NestJS** to manage project data and API endpoints.
+- Implement a backend with **NodeJS** to manage project data and API endpoints.
 - Provide a simple dashboard for CRUD operations on portfolio projects.
 
 ### Live Demo
-The application is deployed and accessible at: [Live Portfolio Link](#)
+The application is deployed and accessible at: (https://arronn.vercel.app/)
 
 ---
 
@@ -33,21 +33,20 @@ The application is deployed and accessible at: [Live Portfolio Link](#)
 ### Frontend
 - Pixel-perfect implementation of the Figma design.
 - Fully responsive layout optimized for mobile, tablet, and desktop devices.
-- Dynamic project listing page fetching data from the backend.
 
 ### Backend
 - RESTful API for fetching and managing project data.
 - Admin dashboard for CRUD operations (add, edit, delete projects).
-- Built with modular and scalable architecture using **NestJS**.
+- Built with modular and scalable architecture using **NodeJS**.
 
 ---
 
 ## Technologies Used
 
 - **Frontend**: Next.js, TypeScript, Tailwind CSS
-- **Backend**: NestJS, TypeScript
-- **Database**: [Your choice of database, e.g., MongoDB/PostgreSQL/MySQL]
-- **Deployment**: [Vercel/Heroku/AWS/etc.]
+- **Backend**: NodeJS, ExpressJS, TypeScript
+- **Database**:  MongoDB with mongoose
+- **Deployment**: Vercel
 - **Tools**: Git, Postman (for API testing)
 
 ---
@@ -57,12 +56,11 @@ The application is deployed and accessible at: [Live Portfolio Link](#)
 ### Prerequisites
 - **Node.js** (v16 or higher)
 - **npm** or **yarn**
-- **Git** (optional, to clone the repository)
-- [Optional] **PostgreSQL/MySQL/MongoDB** (if not using an in-memory database)
+
 
 ### Instructions
 
 #### Clone the Repository
 ```bash
-git clone https://github.com/your-username/portfolio-landing-page.git
-cd portfolio-landing-page
+git clone (https://github.com/Al-amin07/aron_frontend)
+cd aron_frontend
